@@ -1,0 +1,13 @@
+# This file created by conda-build 1.21.14+0.g4dfebe9.dirty
+# meta.yaml template originally from:
+# c:\users\christ~1\appdata\local\temp\no-dependencies-pfxbkl\pygtk-textbuffer-with-undo-0.2, last modified Wed Aug 24 11:43:56 2016
+# ------------------------------------------------
+
+package:
+    name: pygtk-textbuffer-with-undo
+    version: '0.2'
+build:
+    number: '0'
+requirements:
+    build:
+        - python
