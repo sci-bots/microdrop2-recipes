@@ -1,0 +1,22 @@
+package:
+  name: pygio2
+  version: 0.1.0
+
+build:
+  # Only build for `win-32` Python 2.7
+  skip: true  # [not win32 or not py27]
+  number: 2
+  script: pip install --find-links http://192.99.4.95/wheels --trusted-host 192.99.4.95 "pygio2-win==0.1"
+
+requirements:
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - setuptools
+
+about:
+  home: http://192.99.4.95/wheels/
+  license: GPL
