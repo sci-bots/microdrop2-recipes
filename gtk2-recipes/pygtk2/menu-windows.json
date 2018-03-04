@@ -1,0 +1,14 @@
+{
+    "menu_name": "GTK2",
+    "menu_items":
+        [
+            {
+                "system": "cmd",
+                "name": "Glade",
+                "workdir": "${PREFIX}",
+                "icon": "${PREFIX}\\Lib\\site-packages\\gtk-2.0\\gtk_runtime\\bin\\glade-3.exe",
+                "scriptarguments":
+                ["/c", "${PREFIX}\\Lib\\site-packages\\gtk-2.0\\gtk_runtime\\bin\\glade-3.exe"]
+            }
+        ]
+}

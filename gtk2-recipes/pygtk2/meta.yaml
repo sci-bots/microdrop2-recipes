@@ -1,0 +1,31 @@
+package:
+  name: pygtk2
+  version: 0.1.0
+
+build:
+  # Only build for `win-32` Python 2.7
+  skip: true  # [not win32 or not py27]
+  number: 4
+  track_features:
+    - gtk2
+  script:
+    - pip install --find-links http://192.99.4.95/wheels --trusted-host 192.99.4.95 "pygtk2-win==0.1"
+    - if not exist "%PREFIX%\Menu" mkdir "%PREFIX%\Menu"  # [win]
+    - copy "%RECIPE_DIR%\menu-windows.json" "%PREFIX%\Menu"  # [win]
+
+requirements:
+  build:
+    - pygio2
+    - pyglib2
+    - python
+    - setuptools
+
+  run:
+    - pygio2
+    - pyglib2
+    - python
+    - setuptools
+
+about:
+  home: http://192.99.4.95/wheels/
+  license: GPL
