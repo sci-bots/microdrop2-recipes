@@ -1,5 +1,5 @@
-[submodule "gtk2-recipes/.\\_source\\pygtkhelpers"]
-	path = gtk2-recipes/.\\_source\\pygtkhelpers
+[submodule "gtk2-recipes/_source/pygtkhelpers"]
+	path = gtk2-recipes/_source/pygtkhelpers
 	url = git@github.com:sci-bots/pygtkhelpers.git
 [submodule "gtk2-recipes/_source/cairo-helpers"]
 	path = gtk2-recipes/_source/cairo-helpers
