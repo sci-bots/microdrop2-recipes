@@ -1,0 +1,25 @@
+{% set NAME = 'pygst-0.10' %}
+{% set VERSION = '0.1.post2' %}
+{% set WHEEL_NAME = NAME + '-win' %}
+package:
+  name: {{ NAME }}
+  version: {{ VERSION }}
+
+build:
+  # Only build for `win-32` Python 2.7
+  skip: true  # [not win32 or not py27]
+  number: 1
+  script: pip install --find-links http://192.99.4.95/wheels --trusted-host 192.99.4.95 "{{ WHEEL_NAME }}=={{ VERSION }}"
+
+requirements:
+  build:
+    - python
+    - pip
+
+  run:
+    - pycairo-gtk2
+    - pygtk2
+
+test:
+  imports:
+    - gst
