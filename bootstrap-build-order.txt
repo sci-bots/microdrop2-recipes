@@ -1,0 +1,7 @@
+gtk2-recipes\pygio2\
+gtk2-recipes\pyglib2\
+gtk2-recipes\pygtk2\
+gtk2-recipes\pycairo-gtk2\
+gtk2-recipes\matplotlib-recipe\
+gtk2-recipes\pygtk-textbuffer-with-undo\
+gstreamer-recipes\pygst-0.10\
